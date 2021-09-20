@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Black Jack</title>
+  </head>
+  <body style="background-image:radial-gradient(rgba(0, 0, 0, 0.705) 5%, rgba(0, 0, 0, 0.705) 15%, rgba(0, 0, 0, 0.705) 60%),
+  url(/JS/BlackJack/photo-1523658473-41a7ca4772c8.jpeg);color: aliceblue">
+    <h1 style="text-align: center;margin:10px;">Black Jack</h1>
+  
+    <div class="container-md mt-5">
+    <h1 id = "instruc" style="text-align: center;">click on Start Game for new round</h1>
+    
+    <div class="row justify-content-md-center">
+        <div class="col-2 text-center">
+            <h3>Cards : </h3>
+        </div>
+        <div class="col-1 fs-4 text-start">
+            <p id ="bjcard"></p>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="col-2 text-center" >
+            <h3>Sum : </h3> 
+        </div>
+        <div class="col-1 fs-4 text-start">
+            <p id ="bjsum"></p>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="col-3 text-end">
+            <button type="button" class="btn btn-success" onclick="btstart()">Start Game</button>
+        </div>
+        <div class="col-3 text-end fs-4">
+            <button id="bjnewcard" type="button" class="btn btn-success" onclick="btnewcard()" style="display:none">New Card</button>
+        </div>
+    </div>
+
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="/JS/BlackJack/bj.js"></script>   
+</body>
+</html>
